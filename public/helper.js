@@ -12,4 +12,10 @@ const getSelectedGenre = function(){
     return document.getElementById('genres').value;
 }
 
-export {populateGenresDropDown, getSelectedGenre};
+
+const getRandomMovie = function(movies){
+    const randomSelection = Math.floor(Math.random()*movies.length);
+    return movies[randomSelection];
+}
+
+export {populateGenresDropDown, getSelectedGenre, getRandomMovie};
