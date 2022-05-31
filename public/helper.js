@@ -8,4 +8,8 @@ const populateGenresDropDown = function(genres){
     }
 }
 
-export {populateGenresDropDown};
+const getSelectedGenre = function(){
+    return document.getElementById('genres').value;
+}
+
+export {populateGenresDropDown, getSelectedGenre};
